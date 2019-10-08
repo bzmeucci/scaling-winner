@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<title>Il mio sito web</title>
+<head>
+      <link rel="shortcut icon" href="https://www.globalpropiedadgestion.com/wp-content/uploads/2016/06/logo-gestoria1-400x400.png" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script>
+        var numero = 1;
+     function clona_lista () {
+	      $("#0").clone().attr("id", numero++).appendTo("#space");
+      }
+
+      function elimina_lista () {
+        numero--;
+        $("#" + numero).remove();
+      }
+      </script>
+      </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img src="https://www.globalpropiedadgestion.com/wp-content/uploads/2016/06/logo-gestoria1-400x400.png" alt="Registro" width="100px">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="mt-4">Gestionale registro</h1>
+    <p>Premi il pulsante per aggiungere altre tre colonne.</p>
+    <form id="0">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nome">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Cognome">
+              </div>
+              <div class="col">
+                    <input type="text" class="form-control" placeholder="Data di nascita">
+                </div>
+                <div class="col">
+                <button onclick="elimina_lista();" class="btn btn-danger">Rimuovi</button>
+              </div>
+              </div> 
+              <br>       
+          </form>
+          <div id="space"></div>
+        
+          <br><center><a href="javascript:clona_lista();"><button class="btn btn-primary">Aggiungi riga</button></a></center><br>
+        </div>
+
+</body>
+<footer>
+    <center><p>Made with ❤️ in <b>Florence</b></p></center>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer>
